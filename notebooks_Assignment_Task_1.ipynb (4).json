@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "71abf2cf-4248-45f8-baac-34167c0549de",
+      "cell_type": "code",
+      "source": "#1. Print Twinkle Twinkle Poem in Specific Format\nprint(\"Twinkle, twinkle, little star,\")\nprint(\"\\tHow I wonder what you are!\")\nprint(\"\\t\\tUp above the world so high,\")\nprint(\"\\t\\tLike a diamond in the sky.\")\nprint(\"Twinkle, twinkle, little star,\")\nprint(\"\\tHow I wonder what you are\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Twinkle, twinkle, little star,\n\tHow I wonder what you are!\n\t\tUp above the world so high,\n\t\tLike a diamond in the sky.\nTwinkle, twinkle, little star,\n\tHow I wonder what you are\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "6b47c891-b089-49f6-b13c-b07693d9e57a",
+      "cell_type": "code",
+      "source": "#2. Get Python Version\nimport sys\n\nprint(\"Python Version:\")\nprint(sys.version)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Python Version:\n3.13.1 (main, Apr 30 2025, 11:41:46) [Clang 20.0.0git (https:/github.com/llvm/llvm-project 1d810ece2b2c8fab7772049386\n"
+        }
+      ],
+      "execution_count": 2
+    },
+    {
+      "id": "d52c9f67-17ee-402c-967a-8ad039d5e701",
+      "cell_type": "code",
+      "source": "#3. Display Current Date and Time\nimport datetime\n\ncurrent_time = datetime.datetime.now()\n\nprint(\"Current Date and Time:\")\nprint(current_time)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Current Date and Time:\n2026-02-26 18:04:29.954000\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "88fe11ed-17d8-4631-ba5a-7f892fd7a4fb",
+      "cell_type": "code",
+      "source": "#4. Calculate Area of a Circle\nimport math\n\nradius = float(input(\"Enter the radius of the circle: \"))\n\narea = math.pi * radius * radius\n\nprint(\"The area of the circle is:\", area)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter the radius of the circle:  3.4\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "The area of the circle is: 36.31681107549801\n"
+        }
+      ],
+      "execution_count": 4
+    },
+    {
+      "id": "3a330c63-c133-417c-9731-7ab7c404343d",
+      "cell_type": "code",
+      "source": "#5. Reverse First and Last Name\nfirst_name = input(\"Enter your first name: \")\nlast_name = input(\"Enter your last name: \")\n\nprint(f\"Your name in reverse order is:{last_name} {first_name}\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter your first name:  Jawad\nEnter your last name:  Ali\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Your name in reverse order is:Ali Jawad\n"
+        }
+      ],
+      "execution_count": 6
+    },
+    {
+      "id": "6896beb0-896f-4beb-b97e-cdbabe90c68d",
+      "cell_type": "code",
+      "source": "#6. Add Two Numbers\nnumber1 = float(input(\"Enter first number: \"))\nnumber2 = float(input(\"Enter second number: \"))\n\nsum_of_numbers = number1 + number2\n\nprint(\"The sum is:\", sum_of_numbers)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter first number:  3.3\nEnter second number:  2.7\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "The sum is: 6.0\n"
+        }
+      ],
+      "execution_count": 7
+    },
+    {
+      "id": "45e550f3-9c63-4bcc-82b0-5c7685eec2ec",
+      "cell_type": "code",
+      "source": "#7. Mark Sheet with Grades\nprint(\"Enter marks for 5 subjects:\")\n\nsubject1 = float(input(\"Math: \"))\nsubject2 = float(input(\"English: \"))\nsubject3 = float(input(\"Urdu: \"))\nsubject4 = float(input(\"Physic: \"))\nsubject5 = float(input(\"Chemistry: \"))\n\ntotal_marks = subject1 + subject2 + subject3 + subject4 + subject5\naverage_marks = total_marks / 5\n\nif average_marks >= 90:\n    grade = \"A+\"\nelif average_marks >= 80:\n    grade = \"A\"\nelif average_marks >= 70:\n    grade = \"B\"\nelif average_marks >= 60:\n    grade = \"C\"\nelif average_marks >= 50:\n    grade = \"D\"\nelse:\n    grade = \"F\"\n\nprint(\"Total Marks:\", total_marks)\nprint(\"Average Marks:\", average_marks)\nprint(\"Grade:\", grade)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Enter marks for 5 subjects:\n"
+        },
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Math:  40\nEnglish:  70\nUrdu:  30\nPhysic:  20\nChemistry:  80\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Total Marks: 240.0\nAverage Marks: 48.0\nGrade: F\n"
+        }
+      ],
+      "execution_count": 8
+    },
+    {
+      "id": "cb4faf19-a768-4ffe-9fae-a85b14f2d3e0",
+      "cell_type": "code",
+      "source": "#8. Check Even or Odd Number\nnumber = int(input(\"Enter a number: \"))\n\nif number % 2 == 0:\n    print(\"The number is Even.\")\nelse:\n    print(\"The number is Odd.\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter a number:  39\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "The number is Odd.\n"
+        }
+      ],
+      "execution_count": 9
+    },
+    {
+      "id": "378b0259-57cd-4f9c-856d-ab85a4dad6df",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
